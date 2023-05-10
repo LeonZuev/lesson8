@@ -13,7 +13,7 @@ const names = ["Семен", "Иван", "Петр", "Татьяна"];
 const ages = [18, 27, 74, 34];
 
 for (let i = 0; i < names.length; ++i) {
-    names[i] =  names[i] + " " + ages[i] + " лет/годов";
+    names[i] =  names[i] + " " + ages[i] + " лет/годa";
 }
 console.log("First task:");
 console.log(names);
@@ -43,3 +43,15 @@ const namesReverseForth = [...names].reverse();
 console.log("Second task, forth solution:");
 console.log(namesReverseForth);
 
+// fifth solution 'Array.map()'
+const namesReverseFifth = names.map((_, i, arr) => arr[arr.length -1 - i]);
+console.log("Second task, fifth solution:");
+console.log(namesReverseFifth);
+
+// sixth solution 'Array.reduce()'
+const namesReverseSixth = names.reduce((accumulator, currentValue) => {
+    accumulator.unshift(currentValue);
+    return accumulator;
+}, []);
+console.log("Second task, sixth solution:");
+console.log(namesReverseSixth);
