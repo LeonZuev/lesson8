@@ -15,5 +15,11 @@ const ages = [18, 27, 74, 34];
 for (let i = 0; i < names.length; ++i) {
     names[i] =  names[i] + " " + ages[i] + " лет/годов";
 }
-
+console.log("First task:");
 console.log(names);
+
+const namesReverse = names.slice();
+namesReverse.reverse();
+
+console.log("Second task:");
+console.log(namesReverse);
