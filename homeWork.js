@@ -23,3 +23,23 @@ namesReverse.reverse();
 
 console.log("Second task:");
 console.log(namesReverse);
+
+// second solution 'for'
+
+const namesReverseSecond = [];
+for (let i = names.length - 1; i >= 0; --i) {
+    namesReverseSecond.push(names[i]);
+}
+console.log("Second task, second solution:");
+console.log(namesReverseSecond);
+
+// third solution 'Array.from()'
+const namesReverseThird = Array.from(names).reverse();
+console.log("Second task, third solution:");
+console.log(namesReverseThird);
+
+// forth solution 'spread "..."'
+const namesReverseForth = [...names].reverse();
+console.log("Second task, forth solution:");
+console.log(namesReverseForth);
+
